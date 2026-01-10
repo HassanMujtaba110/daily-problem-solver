@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Detail - Daily Problem Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Daily Problem Solver</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="archive.html" class="nav-link">Archive</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="problem-detail">
+            <div class="container">
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h2>Sequence Pattern Recognition</h2>
+                        <p class="date">January 9, 2026</p>
+                    </div>
+                    <div class="problem-body">
+                        <h3>Problem Statement</h3>
+                        <p class="problem-statement">What is the next number in the sequence: 1, 4, 9, 16, 25, ?</p>
+                        
+                        <h3>Solution</h3>
+                        <p>The sequence represents perfect squares: 1², 2², 3², 4², 5², so the next number is 6² = 36.</p>
+                        
+                        <h3>Share this problem</h3>
+                        <div class="social-sharing">
+                            <button class="social-btn facebook" onclick="shareOnSocial('facebook')">Facebook</button>
+                            <button class="social-btn twitter" onclick="shareOnSocial('twitter')">Twitter</button>
+                            <button class="social-btn whatsapp" onclick="shareOnSocial('whatsapp')">WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Daily Problem Solver. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

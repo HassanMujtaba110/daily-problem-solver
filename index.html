@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Problem Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Daily Problem Solver</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="archive.html" class="nav-link">Archive</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Daily Problem Solver</h1>
+                <p>Sharpen your mind with daily math puzzles and coding challenges</p>
+            </div>
+        </section>
+
+        <!-- Math Puzzle of the Day -->
+        <section class="problem-section">
+            <div class="container">
+                <h2>Math Puzzle of the Day</h2>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>Find the Missing Number</h3>
+                        <p class="date">January 10, 2026</p>
+                    </div>
+                    <div class="problem-body">
+                        <p class="problem-statement">What is the next number in the sequence: 2, 6, 12, 20, 30, ?</p>
+                        
+                        <!-- Reveal Button -->
+                        <button class="reveal-btn" onclick="toggleAnswer('math-answer')">Reveal Answer</button>
+                        
+                        <!-- Hidden Answer -->
+                        <div class="answer hidden" id="math-answer">
+                            <h4>Answer:</h4>
+                            <p>The pattern is n(n+1) where n starts from 1: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, so the next is 6×7=42.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding Challenge of the Day -->
+        <section class="problem-section">
+            <div class="container">
+                <h2>Coding Challenge of the Day</h2>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>Two Sum Problem</h3>
+                        <p class="date">January 10, 2026</p>
+                    </div>
+                    <div class="problem-body">
+                        <p class="problem-statement">Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</p>
+                        
+                        <h4>Example:</h4>
+                        <p><strong>Input:</strong> nums = [2,7,11,15], target = 9</p>
+                        <p><strong>Output:</strong> [0,1]</p>
+                        <p><strong>Explanation:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].</p>
+                        
+                        <!-- Reveal Hint Button -->
+                        <button class="reveal-btn" onclick="toggleHint('coding-hint')">Reveal Hint</button>
+                        
+                        <!-- Hidden Hint -->
+                        <div class="hint hidden" id="coding-hint">
+                            <h4>Hint:</h4>
+                            <p>Use a hash map to store the difference between the target and each number as you iterate through the array. This allows you to find the complement in O(1) time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Daily Problem Solver. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
